@@ -124,11 +124,11 @@ var b = 0
 ```
 
 **What might these lines do?**
-
+Determines how much red, green and blue colors an object 
 **What happens if you change the numbers?**
-
+we changed red to zero, green to 80 and blue to 0 which made the square green
 **What numbers are allowed / What numbers have an effect?**
-
+each attribute has a maximum value of 255
 Look at this line:
 
 ```js
@@ -136,16 +136,16 @@ createCanvas(400, 400)
 ```
 
 **What does createCanvas do?**
-
+it creates a sqaure
 **What happens if you change the numbers?**
-
+it changes the scale of the square
 **What numbers are allowed/what numbers have an effect?**
 
 **What happens if you add/remove a number?**
-
+the sqaure disappears as there is no width/height
 **Can you guess what the `function setup() {` part does? What happens if you
 change the name of setup?**
-
+if says what if wants the page to have 
 Look at this line:
 
 ```js
@@ -153,14 +153,14 @@ background(r, g, b)
 ```
 
 **What does background do?**
-
+identifies the colour of the background
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
-
+Not Sure
 **What happens if you change the number of letters?**
-
+the colours are blended together accordingly
 **What happens if you change the letters for different ones?**
-
+it has to be R,G,B as these are the three colours in every pixel
 # Sketch B
 
 Open the `part-b` sketch in your browser, and open `part-b/sketch.js` in your
@@ -183,12 +183,12 @@ function setup() {
 ```
 
 **What does setup do?**
-
+it documents where the cursor is within the canvas
 **What do `{` `}` mean? What happens if you remove one?**
-
+it opens and closes a command, without one/both of the brackets the command will not work
 **What do the numbers in `background(0, 0, 0)` do? What happens when you change
 them? How is this different from Sketch A?**
-
+it identifies the gradient of the background colour.
 Now look at these lines:
 
 ```js
@@ -199,7 +199,7 @@ function draw() {
 ```
 
 **What does draw do?**
-
+it allows the user to draw
 Now look at:
 
 ```js
@@ -207,12 +207,12 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
-
+it changes the colour of the drawing
 **What does fill mean? What happens if you change it to stroke?**
-
+fill means to fill in the entire shape whereas stroke only colours the outline
 **What happens if you remove (or comment out) this line? What about if you
 include both fill and stroke on seperate lines?**
-
+if you delete the line there is no colour. if you include the fill and stroke it includes both of them 
 Now look at this line:
 
 ```js
@@ -220,22 +220,23 @@ ellipse(mouseX, mouseY, 30, 30)
 ```
 
 **What does `ellipse` do?**
-
+it creates a new shapes
 **What happens if you change the numbers?**
-
+the size of the shape will change accordingly
 **What do `mouseX` and `mouseY` mean?**
-
+mousex and mousey where the shape is going to be placed according to the cursor as there is currently no numbers with it 
 **What happens if you change the order of the items between the `(` `)`?**
-
+we changed the order of the items and the shape no longer follows the mouse
 ---
 
 **What happens if you add `background(0)` after `draw() {`? Why?**
-
+The background colour changes to black as the number is zero, the higher the number gets the lighter the shade is.
 Replace the ellipse with a triangle. Use https://p5js.org/reference/ (the 2D
 primitives section) to help.
 
 Play around with the sketch - how else can you change it?
-
+you can change the size of the triangle
+determine which point of the triangle you would like to move
 # Sketch C
 
 Open the `part-c` sketch in your browser, and open `part-c/sketch.js` in your
@@ -243,6 +244,7 @@ editor.
 
 Read the code, then play with the sketch and observe what happens - try clicking
 the mouse on the sketch.
+when you click the mouse the shape changes colour to red
 
 Look at:
 
@@ -255,17 +257,18 @@ if (mouseIsPressed) {
 ```
 
 **What does `mouseIsPressed` mean?**
-
+it means when a mouse is pressed the action below is performed
 **What happens if you change `mouseIsPressed` to `keyIsPressed`?** You’ll need
 to click on the sketch so it registers keyboard events – use the ctrl key if you
 have issues with the keyboard.
-
+When the user types the color changes accordingly
 **What does if / else do?**
-
+if mean when the action is being taken
+else means when the action is not being taken
 **What happens if you remove the { } or ( )? Why?**
-
+the code doesnt work 
 **What happens if you change 255 to mouseX ? Why?**
-
+the shading changes
 **Remove the outline of the circle. Use Google and the P5.js reference to help
 you.**
 

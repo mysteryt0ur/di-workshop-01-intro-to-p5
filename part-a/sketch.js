@@ -6,7 +6,7 @@ var g = 80
 var b = 0
 
 function setup() {
-  createCanvas(400, 400)
+  createCanvas(500, 500)
 
-  background(r, g, b)
+  background(g, b, r)
 }
